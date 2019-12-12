@@ -14,7 +14,9 @@
 }
 .social-btn {
 	padding: 10px;
-	margin: 10px;
+  margin: 10px;
+  border-radius: 50%;
+  font-size: 25px;
 	@extend %btnextend;
 }
 .btn {
@@ -106,25 +108,34 @@ hr {
 
 // images and figures
 img {
-    display: block;
-	max-width: 100%;
-    width: auto;
-    height: auto;
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-    image-rendering: optimizeQuality;
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  image-rendering: optimizeQuality;
 }
-.img-circle {
+.moon {
+  display: inline-block;
+  box-shadow: 0 0 50px whitesmoke,
+              0 0 30px orange,
+              inset 0 10px 10px 20px #ddd,
+              inset 30px 0 35px 50px #ccc;
+  background:#aaa;
 	border-radius: 50%;
-	border: 3px solid $white;
-	height: 150px;
-	width: 150px;
+	height: 200px;
+  width: 200px;
+  margin-top: 0px;
+
+  @media #{$small} {
+    margin-top: 50px;
+	}
 }
 .author-photo {
-    background-color: $white;
+    background-color: $black;
 }
 .image-right {
     float: right;

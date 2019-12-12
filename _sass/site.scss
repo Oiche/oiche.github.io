@@ -21,7 +21,7 @@ body {
 	background-attachment: fixed;
 	@media #{$small} {
 	    background-image: none !important;
-		background: $white;
+		background: $black;
 	}
 }
 * {
@@ -75,11 +75,9 @@ body {
 	padding-right: 15px;
 	padding-left: 15px;
 	@include center-block();
-	background-color: $white;
 	color: $color_shark;
 	z-index: 1;
 	border-radius: 3px;
-	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
 	@include transition(.5s);
 	@media #{$small} {
 		width: 100%;
@@ -94,7 +92,33 @@ body {
 	text-align: center;
 	.title {
 	    margin-top: 0;
-	    margin-bottom: 5px;
+		margin-bottom: 5px;
+		.home-title {
+			text-shadow: 2px 0 0 $black,
+						-2px 0 0 $black,
+						0 2px 0 $black,
+						0 -2px 0 $black,
+						1px 1px $black,
+						-1px -1px 0 $black,
+						1px -1px 0 $black,
+						-1px 1px 0 $black;
+			color: $white;
+			font-size: 2rem;
+			font-weight: 300
+		}
+		.home-subtitle {
+			text-shadow: 2px 0 0 $black,
+						-2px 0 0 $black,
+						0 2px 0 $black,
+						0 -2px 0 $black,
+						1px 1px $black,
+						-1px -1px 0 $black,
+						1px -1px 0 $black,
+						-1px 1px 0 $black;
+			color: $white;
+			font-size: 1.3rem;
+			font-weight: 300
+		}
 	}
 	@media #{$small} {
 		padding: 0 1em;
